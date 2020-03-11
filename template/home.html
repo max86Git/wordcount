@@ -1,0 +1,21 @@
+<h1>THIS IS HTML</h1>
+<style>
+         .button {
+         background-color: #1c87c9;
+         border: none;
+         color: white;
+         padding: 20px 34px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 4px 2px;
+         cursor: pointer;
+         }
+      </style>
+<form action="{% url 'count' %}">
+  <textarea cols="40" rows="5" name="fulltext"></textarea>
+  <br />
+  <input type="submit" value="Count!" />
+</form>
+<a href="{% url 'about' %}" class="button">A propos</a>

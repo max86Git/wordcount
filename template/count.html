@@ -1,0 +1,14 @@
+<h1>Il y a {{ count }} mots dans ton texte</h1>
+
+<a href="{% url 'home' %}">Recommencer</a>
+
+<h1>Full Text:</h1>
+{{ fulltext }}
+
+La liste :
+{% for word, counttotal in worddictionnary %}
+
+{{ word }} - {{counttotal}}
+<br />
+
+{% endfor %}
